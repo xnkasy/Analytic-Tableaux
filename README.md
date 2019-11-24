@@ -18,7 +18,7 @@ A tableau is developed by selecting some unexamined node on a path which is not 
   7. if the node is an β-type node, then it is marked examined, and each open (non-closed) path on which it lies is extended with two branches: on the first branch the node β_1 is placed, and on the second branch β_2 is placed.
   8. if p is of the form Iff(p1, p2) and b is false, then  it is marked examined, and each open (non-closed) path on which it lies is extended with two branches: on the first branch the nodes (p1, false) and (p2, true) are placed one below the other, and on the second branch the nodes (p1, true) and (p2, false) are placed one below the other.  If p is of the form Iff(p1, p2) and b is true, then  it is marked examined, and each open (non-closed) path on which it lies is extended with two branches: on the first branch the nodes (p1, true) and (p2, true) are placed one below the other, and on the second branch the nodes (p1, false) and (p2, false) are placed one below the other.  
 
-A tableau is called "fully developed" if it has no unexamined nodes on any open path.
+A tableau is called "fully developed" if it has no unexamined nodes on any open path. The tableaux is represented by the data structure of the type "tree" defined as: node * bool * bool * tree * tree. The first two bools are for the questions: "Whether the node has been examined?" And "Whether any contradiction has been found?" respectively. 
 
 
 
