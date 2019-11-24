@@ -28,9 +28,8 @@ The program can be compiled and run on the Ocaml terminal. The main functions of
 
     => Inputs
 
-      (i) n: Node
-      
-      (ii) gamma: A store for the current variable assignments. To be passed as [] ONLY
+        (i) n: Node
+        (ii) gamma: A store for the current variable assignments. To be passed as [] ONLY
 
     => Outputs: A fully built Analytic Tableaux
 
