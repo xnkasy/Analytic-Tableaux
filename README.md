@@ -17,3 +17,6 @@ A tableau is developed by selecting some unexamined node on a path which is not 
 6. if the node is an α-type node, then it is marked examined, and each open (non-closed) path on which it lies is extended with two nodes α_1 and α_2, one below the other.  [See Table 1 below]
 7. if the node is an β-type node, then it is marked examined, and each open (non-closed) path on which it lies is extended with two branches: on the first branch the node β_1 is placed, and on the second branch β_2 is placed. [See Table 2 below]
 8. if p is of the form Iff(p1, p2) and b is false, then  it is marked examined, and each open (non-closed) path on which it lies is extended with two branches: on the first branch the nodes (p1, false) and (p2, true) are placed one below the other, and on the second branch the nodes (p1, true) and (p2, false) are placed one below the other.  If p is of the form Iff(p1, p2) and b is true, then  it is marked examined, and each open (non-closed) path on which it lies is extended with two branches: on the first branch the nodes (p1, true) and (p2, true) are placed one below the other, and on the second branch the nodes (p1, false) and (p2, false) are placed one below the other.  
+
+
+### Alpha type nodes
