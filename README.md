@@ -41,6 +41,32 @@ The program can be compiled and run on the Ocaml terminal. The main functions of
       (ii) gamma: A store for the current variable assignments. To be passed as [] ONLY
 
     => Outputs: A node which has a contradiction in it. Marks it closed
-  
+
+3. valid_tableau root gamma
+
+    => Inputs
+
+      (i) root: The input tree, partially or fully built tableaux
+      (ii) gamma: A store for the current variable assignments. To be passed as [] ONLY
+
+    => Outputs: True if the given tree is valid as per the rules
+    
+4. select_node root
+
+    => Inputs: A partially built tableaux
+
+    => Outputs: An unexamined Node
+    
+5. step_develop node root
+
+    => Inputs: 
+    
+      (i) node: The node under consideration which is not yet examined
+      (ii) root: A partially built tableaux
+
+    => Output: The fully completed subtree corresponding to that node as the root
+    
+6. 
+
 
 
