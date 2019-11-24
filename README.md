@@ -50,14 +50,8 @@ The program can be compiled and run on the Ocaml terminal. The main functions of
         (ii) gamma: A store for the current variable assignments. To be passed as [] ONLY
 
     => Outputs: True if the given tree is valid as per the rules
-    
-4. select_node root
-
-    => Inputs: A partially built tableaux
-
-    => Outputs: An unexamined Node
-    
-5. step_develop node root
+        
+4. step_develop node root
 
     => Inputs: 
     
@@ -65,6 +59,12 @@ The program can be compiled and run on the Ocaml terminal. The main functions of
         (ii) root: A partially built tableaux
 
     => Output: The fully completed subtree corresponding to that node as the root
+
+5. select_node root
+
+    => Inputs: A partially built tableaux
+
+    => Outputs: An unexamined Node
     
 6. find_assignments root
 
