@@ -29,6 +29,7 @@ The program can be compiled and run on the Ocaml terminal. The main functions of
     => Inputs
 
       (i) n: Node
+      
       (ii) gamma: A store for the current variable assignments. To be passed as [] ONLY
 
     => Outputs: A fully built Analytic Tableaux
@@ -38,6 +39,7 @@ The program can be compiled and run on the Ocaml terminal. The main functions of
     => Inputs
 
       (i) root: The input tree, partially built tableaux
+      
       (ii) gamma: A store for the current variable assignments. To be passed as [] ONLY
 
     => Outputs: A node which has a contradiction in it. Marks it closed
@@ -47,6 +49,7 @@ The program can be compiled and run on the Ocaml terminal. The main functions of
     => Inputs
 
       (i) root: The input tree, partially or fully built tableaux
+      
       (ii) gamma: A store for the current variable assignments. To be passed as [] ONLY
 
     => Outputs: True if the given tree is valid as per the rules
@@ -62,6 +65,7 @@ The program can be compiled and run on the Ocaml terminal. The main functions of
     => Inputs: 
     
       (i) node: The node under consideration which is not yet examined
+      
       (ii) root: A partially built tableaux
 
     => Output: The fully completed subtree corresponding to that node as the root
