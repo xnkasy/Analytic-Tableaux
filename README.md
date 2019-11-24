@@ -26,21 +26,21 @@ The program can be compiled and run on the Ocaml terminal. The main functions of
 
 1. makeAna n gamma 
 
-  => Inputs
-  
-    (i) n: Node
-    (ii) gamma: A store for the current variable assignments. To be passed as [] ONLY
-    
-  => Outputs: A fully built Analytic Tableaux
+    => Inputs
+
+      (i) n: Node
+      (ii) gamma: A store for the current variable assignments. To be passed as [] ONLY
+
+    => Outputs: A fully built Analytic Tableaux
 
 2. contrad_path root gamma
 
-  => Inputs
-  
-    (i) root: The input tree, partially built tableaux
-    (ii) gamma: A store for the current variable assignments. To be passed as [] ONLY
-    
-  => Outputs: A node which has a contradiction in it. Marks it closed
+    => Inputs
+
+      (i) root: The input tree, partially built tableaux
+      (ii) gamma: A store for the current variable assignments. To be passed as [] ONLY
+
+    => Outputs: A node which has a contradiction in it. Marks it closed
   
 
 
