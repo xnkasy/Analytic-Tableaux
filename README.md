@@ -20,5 +20,23 @@ A tableau is developed by selecting some unexamined node on a path which is not 
 
 A tableau is called "fully developed" if it has no unexamined nodes on any open path. The tableaux is represented by the data structure of the type "tree" defined as: node * bool * bool * tree * tree. The first two bools are for the questions: "Whether the node has been examined?" And "Whether any contradiction has been found?" respectively. 
 
+## Using the code
+
+The program can be compiled and run on the Ocaml terminal. The main functions of the package are as follows:
+
+1. makeAna n gamma 
+  => Inputs
+    (i) n: Node
+    (ii) gamma: A store for the current variable assignments. To be passed as [] ONLY
+    
+  => Outputs: A fully built Analytic Tableaux
+
+2. contrad_path root gamma 
+  => Inputs
+    (i) root: The input tree, partially built tableaux
+    (ii) gamma: A store for the current variable assignments. To be passed as [] ONLY
+    
+  => Outputs: A node which has a contradiction in it. Marks it closed
+  
 
 
