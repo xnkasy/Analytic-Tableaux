@@ -25,14 +25,18 @@ A tableau is called "fully developed" if it has no unexamined nodes on any open 
 The program can be compiled and run on the Ocaml terminal. The main functions of the package are as follows:
 
 1. makeAna n gamma 
+
   => Inputs
+  
     (i) n: Node
     (ii) gamma: A store for the current variable assignments. To be passed as [] ONLY
     
   => Outputs: A fully built Analytic Tableaux
 
-2. contrad_path root gamma 
+2. contrad_path root gamma
+
   => Inputs
+  
     (i) root: The input tree, partially built tableaux
     (ii) gamma: A store for the current variable assignments. To be passed as [] ONLY
     
