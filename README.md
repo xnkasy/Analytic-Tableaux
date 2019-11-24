@@ -22,7 +22,7 @@ A tableau is called "fully developed" if it has no unexamined nodes on any open 
 
 ## Using the code
 
-The program can be compiled and run on the Ocaml terminal. The main functions of the package are as follows:
+The program can be compiled and run on the Ocaml terminal. The main functions of the package are as follows: (A sample test case is given at the end. Please go through it once)
 
 1. makeAna n gamma 
 
@@ -37,9 +37,8 @@ The program can be compiled and run on the Ocaml terminal. The main functions of
 
     => Inputs
 
-      (i) root: The input tree, partially built tableaux
-      
-      (ii) gamma: A store for the current variable assignments. To be passed as [] ONLY
+        (i) root: The input tree, partially built tableaux
+        (ii) gamma: A store for the current variable assignments. To be passed as [] ONLY
 
     => Outputs: A node which has a contradiction in it. Marks it closed
 
@@ -47,9 +46,8 @@ The program can be compiled and run on the Ocaml terminal. The main functions of
 
     => Inputs
 
-      (i) root: The input tree, partially or fully built tableaux
-      
-      (ii) gamma: A store for the current variable assignments. To be passed as [] ONLY
+        (i) root: The input tree, partially or fully built tableaux
+        (ii) gamma: A store for the current variable assignments. To be passed as [] ONLY
 
     => Outputs: True if the given tree is valid as per the rules
     
@@ -63,13 +61,27 @@ The program can be compiled and run on the Ocaml terminal. The main functions of
 
     => Inputs: 
     
-      (i) node: The node under consideration which is not yet examined
-      
-      (ii) root: A partially built tableaux
+        (i) node: The node under consideration which is not yet examined
+        (ii) root: A partially built tableaux
 
     => Output: The fully completed subtree corresponding to that node as the root
     
-6. 
+6. find_assignments root
 
+    => Inputs: A fully built tableaux
+
+    => Outputs: All the Satisfying assignments for the prop-bool pair
+
+7. check_tautology p
+
+    => Inputs: A proposition
+
+    => Outputs: True if it is a Tautology, False otherwise
+
+8. check_contradiction p
+
+    => Inputs: A proposition
+
+    => Outputs: True if it is a Contradiction, False otherwise
 
 
